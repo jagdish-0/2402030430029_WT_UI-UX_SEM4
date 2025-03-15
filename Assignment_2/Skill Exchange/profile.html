@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile - SkillExchange</title>
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/profile.css" />
+  </head>
+  <body>
+    <header>
+      <a href="home.html" class="logo">Skill<span>Exchange</span></a>
+
+      <nav>
+        <button onclick="redirectTo('home.html')">Home</button>
+        <button onclick="redirectTo('community.html')">Community</button>
+        <button onclick="redirectTo('explore.html')">Explore</button>
+        <img
+          src="assets/image/user-profile.png"
+          alt="Profile"
+          class="profile-icon"
+          onclick="redirectTo('profile.html')"
+        />
+      </nav>
+    </header>
+
+    <main class="profile-container">
+      <section class="profile-header">
+        <img
+          src="assets/image/user-profile.png"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+        <h1>Robbie Harrison</h1>
+        <p>❤️ 30k+ 🔄 60+</p>
+        <button class="notification-btn" onclick="redirectToNotifications()">
+          NOTIFICATIONS
+        </button>
+        <button class="message-btn">MESSAGE</button>
+        <button class="logout-btn" onclick="logoutUser()">LOGOUT</button>
+      </section>
+
+      <section class="profile-details">
+        <div class="description">
+          <h2>Description ℹ️</h2>
+          <p>
+            I am a highly skilled and passionate musician with over 8 years of
+            experience in the music industry...
+          </p>
+        </div>
+        <div class="education">
+          <h2>Education:</h2>
+          <ul>
+            <li>
+              Bachelor of Arts in Music Production | XYZ University | Year
+            </li>
+            <li>
+              🎵 Testimonials: "John's musical talent is truly exceptional..." -
+              Director, ABC Films
+            </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h2>📧 Contact:</h2>
+          <p>
+            Email:
+            <a href="mailto:johnsmith@example.com">johnsmith@example.com</a>
+          </p>
+        </div>
+        <div class="about">
+          <h2>About ℹ️</h2>
+          <p>📞 030-29843-714598</p>
+          <p>📧 dubeylakshya00@gmail.com</p>
+          <p>🔗 <a href="https://www.linkedin.com/feed/">LinkedIn</a></p>
+        </div>
+        <div class="achievements">
+          <h2>Achievements 🎵</h2>
+          <ul>
+            <li>
+              Released two successful albums that garnered positive reviews...
+            </li>
+            <li>
+              Awarded "Best Original Soundtrack" at the XYZ Film Festival...
+            </li>
+            <li>Collaborated with renowned artists and musicians...</li>
+          </ul>
+        </div>
+        <div class="skills">
+          <h2>🎵 Skills:</h2>
+          <ul>
+            <li>Composition and songwriting</li>
+            <li>Music production and arranging</li>
+            <li>Instrumental proficiency (guitar, piano, drums)</li>
+            <li>Studio recording and live performance</li>
+            <li>Sound mixing and mastering</li>
+            <li>Collaborative and improvisational skills</li>
+            <li>Proficient in music software (Logic Pro, Ableton Live)</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/profile.js"></script>
+  </body>
+</html>

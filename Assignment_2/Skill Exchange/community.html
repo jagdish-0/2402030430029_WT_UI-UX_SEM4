@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillExchange - Community</title>
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/community.css" />
+  </head>
+  <body>
+    <header>
+      <a href="home.html" class="logo">Skill<span>Exchange</span></a>
+
+      <nav>
+        <button onclick="redirectTo('home.html')">Home</button>
+        <button onclick="redirectTo('community.html')">Community</button>
+        <button onclick="redirectTo('explore.html')">Explore</button>
+        <img
+          src="assets/image/user-profile.png"
+          alt="Profile"
+          class="profile-icon"
+          onclick="redirectTo('profile.html')"
+        />
+      </nav>
+    </header>
+
+    <main class="community-container">
+      <h1>Community</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Search here!" />
+        <button class="filter-btn">&#9881; Filter</button>
+      </div>
+
+      <div class="category-buttons">
+        <button>Musician</button>
+        <button>Graphic Designer</button>
+        <button>Fitness Coach</button>
+        <button>Dancer</button>
+        <button>Coder</button>
+      </div>
+
+      <h2>Results</h2>
+      <div class="results">
+        <div class="community-card">
+          <h3>Graphic Era</h3>
+          <p>
+            Unleash your creativity and join our vibrant community of graphic
+            designers, where ideas ignite and talents flourish.
+          </p>
+          <button>Ask to Join</button>
+        </div>
+        <div class="community-card">
+          <h3>DesignConnect</h3>
+          <p>
+            Unleash your artistic genius within a thriving community of graphic
+            designers, where inspiration flows and collaborations thrive.
+          </p>
+          <button>Ask to Join</button>
+        </div>
+        <div class="community-card">
+          <h3>PixelPulse</h3>
+          <p>
+            Unleash your artistic genius within a thriving community of graphic
+            designers, where inspiration flows and collaborations thrive.
+          </p>
+          <button>Ask to Join</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/community.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notifications</title>
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/notification.css" />
+  </head>
+  <body>
+    <header>
+      <a href="home.html" class="logo">Skill<span>Exchange</span></a>
+
+      <nav>
+        <button onclick="redirectTo('home.html')">Home</button>
+        <button onclick="redirectTo('community.html')">Community</button>
+        <button onclick="redirectTo('explore.html')">Explore</button>
+        <a href="profile.html">
+          <img
+            src="assets/image/user-profile.png"
+            alt="Profile"
+            class="profile-icon"
+            onclick="redirectTo('profile.html')"
+          />
+        </a>
+      </nav>
+    </header>
+
+    <main class="notifications-container">
+      <!-- Send Requests Section -->
+      <section class="send-section">
+        <h2>SEND</h2>
+        <div class="card send-card">
+          <img src="assets/image/profile1.png" alt="User" />
+          <div class="info">
+            <h3>Robbie Harrison</h3>
+            <p>Musician - ★★★★★</p>
+            <p>Experience: 8 years</p>
+            <button class="swap-btn" onclick="toggleSwap(this)">UNSWAP</button>
+          </div>
+        </div>
+        <div class="card send-card">
+          <img src="assets/image/profile2.png" alt="User" />
+          <div class="info">
+            <h3>James Smith</h3>
+            <p>Musician - ★★★★★</p>
+            <p>Experience: 5 years</p>
+            <button class="swap-btn" onclick="toggleSwap(this)">UNSWAP</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Received Requests Section -->
+      <section class="receive-section">
+        <h2>RECEIVED</h2>
+        <div class="card receive-card">
+          <img src="assets/image/profile3.png" alt="User" />
+          <div class="info">
+            <h3>Jessamine Mumtaz</h3>
+            <p>Designer - ★★★★</p>
+            <p>Experience: 6 years</p>
+            <button class="accept-btn" onclick="acceptRequest(this)">
+              ACCEPT
+            </button>
+            <button class="delete-btn" onclick="deleteRequest(this)">
+              DELETE
+            </button>
+          </div>
+        </div>
+        <div class="card receive-card">
+          <img src="assets/image/profile6.png" alt="User" />
+          <div class="info">
+            <h3>Jehan Daruwala</h3>
+            <p>Stock Trader - ★★★★</p>
+            <p>Experience: 3 years</p>
+            <button class="accept-btn" onclick="acceptRequest(this)">
+              ACCEPT
+            </button>
+            <button class="delete-btn" onclick="deleteRequest(this)">
+              DELETE
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/notification.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

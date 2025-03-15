@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <button class="back-btn">⬅</button>
+      <h2>Hi, Welcome Back! 👋</h2>
+      <p>Hello again. You have been missed!</p>
+
+      <label for="loginEmail">Email</label>
+      <input
+        type="email"
+        id="loginEmail"
+        placeholder="Email, phone & username"
+        required
+      />
+
+      <label for="loginPassword">Password</label>
+      <input
+        type="password"
+        id="loginPassword"
+        placeholder="Password"
+        required
+      />
+
+      <div class="options">
+        <label><input type="checkbox" /> Remember Password</label>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+      </div>
+
+      <button onclick="loginUser()" class="login-btn">LOGIN</button>
+
+      <div class="divider">
+        <hr />
+        <span>or</span>
+        <hr />
+      </div>
+
+      <div class="social-login">
+        <img src="google-icon.png" alt="Google" />
+        <img src="facebook-icon.png" alt="Facebook" />
+        <img src="apple-icon.png" alt="Apple" />
+      </div>
+
+      <p class="register-link">
+        Don't have an account? <a href="signup.html">Sign Up</a>
+      </p>
+    </div>
+
+    <script src="js/auth.js"></script>
+  </body>
+</html>

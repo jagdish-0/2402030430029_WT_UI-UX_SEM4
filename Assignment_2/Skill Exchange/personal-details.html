@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Details</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Personal Details</h2>
+      <p>Provide details to enhance your experience.</p>
+
+      <label>Occupation*</label>
+      <input type="text" id="occupation" placeholder="Your Occupation" />
+
+      <label>Skills Owned*</label>
+      <input
+        type="text"
+        id="skills"
+        placeholder="Web Developer, Designer, etc."
+      />
+
+      <label>Experience (Years)*</label>
+      <input type="number" id="experience" placeholder="Years" />
+
+      <label>Location*</label>
+      <input type="text" id="location" placeholder="City, Country" />
+
+      <label>Work Link*</label>
+      <input
+        type="text"
+        id="workLink"
+        placeholder="LinkedIn or Portfolio URL"
+      />
+
+      <label>Description*</label>
+      <textarea
+        id="description"
+        placeholder="Add something about yourself..."
+      ></textarea>
+
+      <button onclick="savePersonalDetails()">Next</button>
+    </div>
+    <script src="js/auth.js"></script>
+  </body>
+</html>
